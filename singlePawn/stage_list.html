@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>关卡列表</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/individual.css">
+    <script>
+        var timeCount ='2016/7/20 14:10:00';  //倒计时结束时间
+        var totalScore = 2000;  //比赛总分数
+    </script>
+</head>
+<body>
+
+     <div class="titleBox">
+    	<div class="cont">
+            <div class="logoBox">
+              <img src="./images/gxb_logo.png" alt="" class="logo">
+            </div>
+            <span class="title">2016年第四届通信网络安全知识技能竞赛</span>
+        </div>
+    </div>
+    <div class="timeBox">
+        <p>剩余时间:</p>
+        <h6 id="showClock">01:32:21</h6>
+    </div>
+    <!--关卡列表-->
+    <div class="stage_wrap">
+    	<div class="stage_cont">
+        	<div class="stage_container">
+                <div class="stage_top"></div>
+                <div class="stage_list"></div>
+                <div class="db_pager">
+                	<a href="javascript:;" class="prev">上一页</a>
+                    <a href="#" class="page">第1页</a>
+                    <a href="javascript:;" class="next">下一页</a>
+                </div>
+                <div class="stage_bottom"></div>
+            </div>
+        </div> 
+    </div>
+    <!--当前页面-->
+    <div class="db_cuurentPage">
+    	<span>1</span>
+    </div>
+    <script type="text/javascript" src="./js/jquery_1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./js/stage_list.js"></script>
+
+  </body>
+</html>

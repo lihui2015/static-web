@@ -1,0 +1,794 @@
+/*=====================星球=======================*/
+.planet_container {
+	position: absolute;
+	left: 0;
+	top: 95px;
+	width: 100%;
+}
+
+.planet_list {
+	padding: 0 190px; position:relative;
+}
+
+.planet_item {
+	width: 25%;
+	float: left;
+	height: 180px;
+	text-align: center;
+	padding: 10px 0;
+	position: relative;
+}
+
+.planet_item .ball {
+	/*width:49%;*/ width:120px; height:120px;
+	padding: 10px;
+	display: inline-block;
+	background: url(../images/circle_dashed.png) no-repeat scroll 0 0;
+	background-size: 100%;
+	position: absolute;
+	left: 47px;
+	top: 18px;
+	-webkit-animation: circle-spin-half 10s linear infinite;
+	animation: circle-spin-half 10s linear infinite;
+}
+
+.planet_item .ball img {
+	max-width: 100%;
+}
+
+.planet_item .outer_barrier {
+	width: 66%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	left: 16px;
+	top: 0px;
+	z-index: 2;
+	-webkit-animation: circle-anti-half 5s linear infinite;
+	animation: circle-anti-half 5s linear infinite;
+	 
+}
+.planet_item .outer_barrier {position: absolute;
+	border-radius: 50%;
+	background: transparent;
+	overflow: hidden;
+	border-radius: 50%;
+	opacity: 1;z-index: 10;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	pointer-events: auto;
+	top: 45%;
+	left: 42%;
+	margin-top: -92px;
+	margin-left: -86px;
+	width: 180px;
+	height: 180px;
+}
+
+.planet_item .outer_barrier li a {
+	position: absolute;
+	display: block;
+	right: -3.25em;
+	bottom: -3.25em;
+	width: 6.5em;
+	height: 6.5em;
+	border-radius: 50%;
+	background: #429a67;
+	background: -webkit-radial-gradient(transparent 59%, rgba(92,188,241,.2) 35%);
+	background: -moz-radial-gradient(transparent 59%, rgba(92,188,241,.2) 35%);
+	background: radial-gradient(transparent 59%, rgba(92,188,241,.2) 35%);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 2;
+	-webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-60deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-60deg) rotate(-75deg) scale(1);
+	transform: skew(-60deg) rotate(-75deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: auto;
+	border: 1px solid #5cbcf1;
+}
+
+
+
+.planet_item .outer_barrier li {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	margin-top: -10em;
+	margin-left: -10em;
+	width: 10em;
+	height: 10em;
+	font-size: 1.5em;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: rotate(76deg) skew(60deg);
+	-moz-transform: rotate(76deg) skew(60deg);
+	-ms-transform: rotate(76deg) skew(60deg);
+	transform: rotate(76deg) skew(60deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	pointer-events: none;
+}
+
+
+.planet_item .outer_barrier li.pass a{
+	background: -webkit-radial-gradient(transparent 60%, rgba(92,188,241,0) 35%);
+	background: -moz-radial-gradient(transparent 60%, rgba(92,188,241,0) 35%);
+	background: radial-gradient(transparent 60%, rgba(92,188,241,0) 35%);
+}
+.planet_item .outer_barrier li a:after {
+	content: " ";
+	position: absolute;
+	right: 0.1em;
+	bottom: -0.08em;
+	display: block;
+	width: 6em;
+	height: 6em;
+	border-radius: 50%;
+	background: #429a67;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.98em;
+	line-height: 2;
+	-webkit-transform: skew(0deg) rotate(-60deg) scale(1);
+	-moz-transform: skew(0deg) rotate(-60deg) scale(1);
+	-ms-transform: skew(0deg) rotate(-60deg) scale(1);
+	transform: skew(0deg) rotate(-60deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: auto;
+	border: 1px solid #5cbcf1;
+}
+
+.border-l {
+	width: 2px;
+	height: 15px;
+	background-color: #5cbcf1;
+	transform: rotate(-14deg);
+	position: absolute;
+	left: 62px;
+	top: 2px;
+	z-index: 2;
+}
+
+.border-r {
+	width: 2px;
+	height: 15px;
+	background-color: #5cbcf1;
+	transform: rotate(14deg);
+	position: absolute;
+	left: 100px;
+	top: 2px;
+	z-index: 2;
+}
+/*=======ten========*/
+.planet_item .outer_barrier.ten_barrier li a {
+	-webkit-transform: skew(-75deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-75deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-75deg) rotate(-75deg) scale(1);
+	transform: skew(-75deg) rotate(-75deg) scale(1);
+}
+.planet_item .outer_barrier.ten_barrier li:first-child {
+	-webkit-transform: rotate(10deg) skew(75deg);
+	-moz-transform: rotate(10deg) skew(75deg);
+	-ms-transform: rotate(10deg) skew(75deg);
+	transform: rotate(10deg) skew(75deg);
+}
+
+.planet_item .outer_barrier.ten_barrier li:nth-child(2) {
+	-webkit-transform: rotate(45deg) skew(75deg);
+	-moz-transform: rotate(45deg) skew(75deg);
+	-ms-transform: rotate(45deg) skew(75deg);
+	transform: rotate(45deg) skew(75deg);
+}
+
+.planet_item .outer_barrier.ten_barrier li:nth-child(3) {
+	-webkit-transform: rotate(80deg) skew(75deg);
+	-moz-transform: rotate(80deg) skew(75deg);
+	-ms-transform: rotate(80deg) skew(75deg);
+	transform: rotate(80deg) skew(75deg);
+}
+
+.planet_item .outer_barrier.ten_barrier li:nth-child(4) {
+	-webkit-transform: rotate(115deg) skew(75deg);
+	-moz-transform: rotate(115deg) skew(75deg);
+	-ms-transform: rotate(115deg) skew(75deg);
+	transform: rotate(115deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li:nth-child(5) {
+	-webkit-transform: rotate(150deg) skew(75deg);
+	-moz-transform: rotate(150deg) skew(75deg);
+	-ms-transform: rotate(150deg) skew(75deg);
+	transform: rotate(150deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li:nth-child(6) {
+	-webkit-transform: rotate(185deg) skew(75deg);
+	-moz-transform: rotate(185deg) skew(75deg);
+	-ms-transform: rotate(185deg) skew(75deg);
+	transform: rotate(185deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li:nth-child(7) {
+	-webkit-transform: rotate(225deg) skew(75deg);
+	-moz-transform: rotate(225deg) skew(75deg);
+	-ms-transform: rotate(225deg) skew(75deg);
+	transform: rotate(225deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li:nth-child(8) {
+	-webkit-transform: rotate(260deg) skew(75deg);
+	-moz-transform: rotate(260deg) skew(75deg);
+	-ms-transform: rotate(260deg) skew(75deg);
+	transform: rotate(260deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li:nth-child(9) {
+	-webkit-transform: rotate(295deg) skew(75deg);
+	-moz-transform: rotate(295deg) skew(75deg);
+	-ms-transform: rotate(295deg) skew(75deg);
+	transform: rotate(295deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li:nth-child(10) {
+	-webkit-transform: rotate(335deg) skew(75deg);
+	-moz-transform: rotate(335deg) skew(75deg);
+	-ms-transform: rotate(335deg) skew(75deg);
+	transform: rotate(335deg) skew(75deg);
+}
+.planet_item .outer_barrier.ten_barrier li a:after{
+	right: 0.1em;
+	bottom: -0.03em;
+}
+.planet_item .outer_barrier.ten_barrier .border-r{
+	height: 15px;
+	left: 81px;
+	top: -1px;
+	transform: rotate(1deg);
+}
+
+/*=======nine========*/
+.planet_item .outer_barrier.nine_barrier li a {
+	-webkit-transform: skew(-70deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-70deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-70deg) rotate(-75deg) scale(1);
+	transform: skew(-70deg) rotate(-75deg) scale(1);
+}
+.planet_item .outer_barrier.nine_barrier li:first-child {
+	-webkit-transform: rotate(10deg) skew(70deg);
+	-moz-transform: rotate(10deg) skew(70deg);
+	-ms-transform: rotate(10deg) skew(70deg);
+	transform: rotate(10deg) skew(70deg);
+}
+
+.planet_item .outer_barrier.nine_barrier li:nth-child(2) {
+	-webkit-transform: rotate(50deg) skew(70deg);
+	-moz-transform: rotate(50deg) skew(70deg);
+	-ms-transform: rotate(50deg) skew(70deg);
+	transform: rotate(50deg) skew(70deg);
+}
+
+.planet_item .outer_barrier.nine_barrier li:nth-child(3) {
+	-webkit-transform: rotate(90deg) skew(70deg);
+	-moz-transform: rotate(90deg) skew(70deg);
+	-ms-transform: rotate(90deg) skew(70deg);
+	transform: rotate(90deg) skew(70deg);
+}
+
+.planet_item .outer_barrier.nine_barrier li:nth-child(4) {
+	-webkit-transform: rotate(130deg) skew(70deg);
+	-moz-transform: rotate(130deg) skew(70deg);
+	-ms-transform: rotate(130deg) skew(70deg);
+	transform: rotate(130deg) skew(70deg);
+}
+.planet_item .outer_barrier.nine_barrier li:nth-child(5) {
+	-webkit-transform: rotate(170deg) skew(70deg);
+	-moz-transform: rotate(170deg) skew(70deg);
+	-ms-transform: rotate(170deg) skew(70deg);
+	transform: rotate(170deg) skew(70deg);
+}
+.planet_item .outer_barrier.nine_barrier li:nth-child(6) {
+	-webkit-transform: rotate(210deg) skew(70deg);
+	-moz-transform: rotate(210deg) skew(70deg);
+	-ms-transform: rotate(210deg) skew(70deg);
+	transform: rotate(210deg) skew(70deg);
+}
+.planet_item .outer_barrier.nine_barrier li:nth-child(7) {
+	-webkit-transform: rotate(250deg) skew(70deg);
+	-moz-transform: rotate(250deg) skew(70deg);
+	-ms-transform: rotate(250deg) skew(70deg);
+	transform: rotate(250deg) skew(70deg);
+}
+.planet_item .outer_barrier.nine_barrier li:nth-child(8) {
+	-webkit-transform: rotate(290deg) skew(70deg);
+	-moz-transform: rotate(290deg) skew(70deg);
+	-ms-transform: rotate(290deg) skew(70deg);
+	transform: rotate(290deg) skew(70deg);
+}
+.planet_item .outer_barrier.nine_barrier li:nth-child(9) {
+	-webkit-transform: rotate(330deg) skew(70deg);
+	-moz-transform: rotate(330deg) skew(70deg);
+	-ms-transform: rotate(330deg) skew(70deg);
+	transform: rotate(330deg) skew(70deg);
+}
+.planet_item .outer_barrier.nine_barrier li a:after{
+	right: 0.2em;
+	bottom: -0.1em;
+}
+.planet_item .outer_barrier.nine_barrier .border-r{
+	height: 15px;
+	left: 87px;
+	top: 0px;
+	transform: rotate(4deg);
+}
+
+/*=======eight========*/
+.planet_item .outer_barrier.eight_barrier li a {
+	-webkit-transform: skew(-70deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-70deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-70deg) rotate(-75deg) scale(1);
+	transform: skew(-70deg) rotate(-75deg) scale(1);
+}
+.planet_item .outer_barrier.eight_barrier li:first-child {
+	-webkit-transform: rotate(10deg) skew(70deg);
+	-moz-transform: rotate(10deg) skew(70deg);
+	-ms-transform: rotate(10deg) skew(70deg);
+	transform: rotate(10deg) skew(70deg);
+}
+
+.planet_item .outer_barrier.eight_barrier li:nth-child(2) {
+	-webkit-transform: rotate(55deg) skew(70deg);
+	-moz-transform: rotate(55deg) skew(70deg);
+	-ms-transform: rotate(55deg) skew(70deg);
+	transform: rotate(55deg) skew(70deg);
+}
+
+.planet_item .outer_barrier.eight_barrier li:nth-child(3) {
+	-webkit-transform: rotate(100deg) skew(70deg);
+	-moz-transform: rotate(100deg) skew(70deg);
+	-ms-transform: rotate(100deg) skew(70deg);
+	transform: rotate(100deg) skew(70deg);
+}
+
+.planet_item .outer_barrier.eight_barrier li:nth-child(4) {
+	-webkit-transform: rotate(145deg) skew(70deg);
+	-moz-transform: rotate(145deg) skew(70deg);
+	-ms-transform: rotate(145deg) skew(70deg);
+	transform: rotate(145deg) skew(70deg);
+}
+.planet_item .outer_barrier.eight_barrier li:nth-child(5) {
+	-webkit-transform: rotate(190deg) skew(70deg);
+	-moz-transform: rotate(190deg) skew(70deg);
+	-ms-transform: rotate(190deg) skew(70deg);
+	transform: rotate(190deg) skew(70deg);
+}
+.planet_item .outer_barrier.eight_barrier li:nth-child(6) {
+	-webkit-transform: rotate(235deg) skew(70deg);
+	-moz-transform: rotate(235deg) skew(70deg);
+	-ms-transform: rotate(235deg) skew(70deg);
+	transform: rotate(235deg) skew(70deg);
+}
+.planet_item .outer_barrier.eight_barrier li:nth-child(7) {
+	-webkit-transform: rotate(280deg) skew(70deg);
+	-moz-transform: rotate(280deg) skew(70deg);
+	-ms-transform: rotate(280deg) skew(70deg);
+	transform: rotate(280deg) skew(70deg);
+}
+.planet_item .outer_barrier.eight_barrier li:nth-child(8) {
+	-webkit-transform: rotate(325deg) skew(70deg);
+	-moz-transform: rotate(325deg) skew(70deg);
+	-ms-transform: rotate(325deg) skew(70deg);
+	transform: rotate(325deg) skew(70deg);
+}
+.planet_item .outer_barrier.eight_barrier li a:after{
+	right: 0.1em;
+	bottom: -0.04em;
+}
+.planet_item .outer_barrier.eight_barrier .border-r{
+	height: 15px;
+	left: 87px;
+	top: 0px;
+	transform: rotate(8deg);
+}
+
+/*=======seven========*/
+.planet_item .outer_barrier.seven_barrier li a {
+	-webkit-transform: skew(-55deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-55deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-55deg) rotate(-75deg) scale(1);
+	transform: skew(-55deg) rotate(-75deg) scale(1);
+}
+.planet_item .outer_barrier.seven_barrier li:first-child {
+	-webkit-transform: rotate(-30deg) skew(55deg);
+	-moz-transform: rotate(-30deg) skew(55deg);
+	-ms-transform: rotate(-30deg) skew(55deg);
+	transform: rotate(-30deg) skew(55deg);
+}
+
+.planet_item .outer_barrier.seven_barrier li:nth-child(2) {
+	-webkit-transform: rotate(20deg) skew(55deg);
+	-moz-transform: rotate(20deg) skew(55deg);
+	-ms-transform: rotate(20deg) skew(55deg);
+	transform: rotate(20deg) skew(55deg);
+}
+
+.planet_item .outer_barrier.seven_barrier li:nth-child(3) {
+	-webkit-transform: rotate(70deg) skew(55deg);
+	-moz-transform: rotate(70deg) skew(55deg);
+	-ms-transform: rotate(70deg) skew(55deg);
+	transform: rotate(70deg) skew(55deg);
+}
+
+.planet_item .outer_barrier.seven_barrier li:nth-child(4) {
+	-webkit-transform: rotate(120deg) skew(55deg);
+	-moz-transform: rotate(120deg) skew(55deg);
+	-ms-transform: rotate(120deg) skew(55deg);
+	transform: rotate(120deg) skew(55deg);
+}
+.planet_item .outer_barrier.seven_barrier li:nth-child(5) {
+	-webkit-transform: rotate(170deg) skew(55deg);
+	-moz-transform: rotate(170deg) skew(55deg);
+	-ms-transform: rotate(170deg) skew(55deg);
+	transform: rotate(170deg) skew(55deg);
+}
+.planet_item .outer_barrier.seven_barrier li:nth-child(6) {
+	-webkit-transform: rotate(225deg) skew(55deg);
+	-moz-transform: rotate(225deg) skew(55deg);
+	-ms-transform: rotate(225deg) skew(55deg);
+	transform: rotate(225deg) skew(55deg);
+}
+.planet_item .outer_barrier.seven_barrier li:nth-child(7) {
+	-webkit-transform: rotate(280deg) skew(55deg);
+	-moz-transform: rotate(280deg) skew(55deg);
+	-ms-transform: rotate(280deg) skew(55deg);
+	transform: rotate(280deg) skew(55deg);
+}
+.planet_item .outer_barrier.seven_barrier .border-r{
+	transform: rotate(22deg);
+	left: 107px;
+	top: 4px;
+	z-index: 2;
+}
+/*=======six========*/
+.planet_item .outer_barrier.six_barrier li:first-child {
+	-webkit-transform: rotate(-20deg) skew(60deg);
+	-moz-transform: rotate(-20deg) skew(60deg);
+	-ms-transform: rotate(-20deg) skew(60deg);
+	transform: rotate(-20deg) skew(60deg);
+}
+
+.planet_item .outer_barrier.six_barrier li:nth-child(2) {
+	-webkit-transform: rotate(40deg) skew(60deg);
+	-moz-transform: rotate(40deg) skew(60deg);
+	-ms-transform: rotate(40deg) skew(60deg);
+	transform: rotate(40deg) skew(60deg);
+}
+
+.planet_item .outer_barrier.six_barrier li:nth-child(3) {
+	-webkit-transform: rotate(100deg) skew(60deg);
+	-moz-transform: rotate(100deg) skew(60deg);
+	-ms-transform: rotate(100deg) skew(60deg);
+	transform: rotate(100deg) skew(60deg);
+}
+
+.planet_item .outer_barrier.six_barrier li:nth-child(4) {
+	-webkit-transform: rotate(160deg) skew(60deg);
+	-moz-transform: rotate(160deg) skew(60deg);
+	-ms-transform: rotate(160deg) skew(60deg);
+	transform: rotate(160deg) skew(60deg);
+}
+.planet_item .outer_barrier.six_barrier li:nth-child(5) {
+	-webkit-transform: rotate(220deg) skew(60deg);
+	-moz-transform: rotate(220deg) skew(60deg);
+	-ms-transform: rotate(220deg) skew(60deg);
+	transform: rotate(220deg) skew(60deg);
+}
+.planet_item .outer_barrier.six_barrier li:nth-child(6) {
+	-webkit-transform: rotate(280deg) skew(60deg);
+	-moz-transform: rotate(280deg) skew(60deg);
+	-ms-transform: rotate(280deg) skew(60deg);
+	transform: rotate(280deg) skew(60deg);
+}
+/*=======five========*/
+.planet_item .outer_barrier.fiver_barrier li:first-child {
+	-webkit-transform: rotate(-26deg) skew(60deg);
+	-moz-transform: rotate(-26deg) skew(60deg);
+	-ms-transform: rotate(-26deg) skew(60deg);
+	transform: rotate(-26deg) skew(60deg);
+}
+
+.planet_item .outer_barrier.fiver_barrier li:nth-child(2) {
+	-webkit-transform: rotate(44deg) skew(60deg);
+	-moz-transform: rotate(44deg) skew(60deg);
+	-ms-transform: rotate(44deg) skew(60deg);
+	transform: rotate(44deg) skew(60deg);
+}
+
+.planet_item .outer_barrier.fiver_barrier li:nth-child(3) {
+	-webkit-transform: rotate(120deg) skew(60deg);
+	-moz-transform: rotate(120deg) skew(60deg);
+	-ms-transform: rotate(120deg) skew(60deg);
+	transform: rotate(120deg) skew(60deg);
+}
+
+.planet_item .outer_barrier.fiver_barrier li:nth-child(4) {
+	-webkit-transform: rotate(190deg) skew(60deg);
+	-moz-transform: rotate(190deg) skew(60deg);
+	-ms-transform: rotate(190deg) skew(60deg);
+	transform: rotate(190deg) skew(60deg);
+}
+.planet_item .outer_barrier.fiver_barrier li:nth-child(5) {
+	-webkit-transform: rotate(266deg) skew(60deg);
+	-moz-transform: rotate(266deg) skew(60deg);
+	-ms-transform: rotate(266deg) skew(60deg);
+	transform: rotate(266deg) skew(60deg);
+}
+
+/*=======four========*/
+.planet_item .outer_barrier.four_barrier li a {
+	-webkit-transform: skew(-45deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-45deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-45deg) rotate(-75deg) scale(1);
+	transform: skew(-45deg) rotate(-75deg) scale(1);
+}
+.planet_item .outer_barrier.four_barrier li:first-child {
+	-webkit-transform: rotate(7deg) skew(45deg);
+	-moz-transform: rotate(7deg) skew(45deg);
+	-ms-transform: rotate(7deg) skew(45deg);
+	transform: rotate(7deg) skew(45deg);
+}
+
+.planet_item .outer_barrier.four_barrier li:nth-child(2) {
+	-webkit-transform: rotate(100deg) skew(45deg);
+	-moz-transform: rotate(100deg) skew(45deg);
+	-ms-transform: rotate(100deg) skew(45deg);
+	transform: rotate(100deg) skew(45deg);
+}
+
+.planet_item .outer_barrier.four_barrier li:nth-child(3) {
+	-webkit-transform: rotate(205deg) skew(45deg);
+	-moz-transform: rotate(205deg) skew(45deg);
+	-ms-transform: rotate(205deg) skew(45deg);
+	transform: rotate(205deg) skew(45deg);
+}
+
+.planet_item .outer_barrier.four_barrier li:nth-child(4) {
+	-webkit-transform: rotate(275deg) skew(45deg);
+	-moz-transform: rotate(275deg) skew(45deg);
+	-ms-transform: rotate(275deg) skew(45deg);
+	transform: rotate(275deg) skew(45deg);
+}
+.planet_item .outer_barrier.four_barrier li a:after{
+	right: 0.2em;
+	bottom: -0.1em;
+}
+.planet_item .outer_barrier.four_barrier .border-r{
+	height: 15px;
+	left: 119px;
+	top: 9px;	
+	transform: rotate(30deg);
+}
+
+
+/*=======three========*/
+.planet_item .outer_barrier.three_barrier li a {
+
+
+	-webkit-transform: skew(-30deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-30deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-30deg) rotate(-75deg) scale(1);
+	transform: skew(-30deg) rotate(-75deg) scale(1);
+}
+.planet_item .outer_barrier.three_barrier li:first-child {
+	-webkit-transform: rotate(30deg) skew(30deg);
+	-moz-transform: rotate(30deg) skew(30deg);
+	-ms-transform: rotate(30deg) skew(30deg);
+	transform: rotate(30deg) skew(30deg);
+}
+
+.planet_item .outer_barrier.three_barrier li:nth-child(2) {
+	-webkit-transform: rotate(145deg) skew(30deg);
+	-moz-transform: rotate(145deg) skew(30deg);
+	-ms-transform: rotate(145deg) skew(30deg);
+	transform: rotate(145deg) skew(30deg);
+}
+
+.planet_item .outer_barrier.three_barrier li:nth-child(3) {
+	-webkit-transform: rotate(270deg) skew(30deg);
+	-moz-transform: rotate(270deg) skew(30deg);
+	-ms-transform: rotate(270deg) skew(30deg);
+	transform: rotate(270deg) skew(30deg);
+}
+
+.planet_item .outer_barrier.three_barrier li a:after{
+	right: 0.28em;
+	bottom: -0.1em;
+}
+.planet_item .outer_barrier.three_barrier .border-r{
+	height: 14px;
+	left: 135px;
+	top: 21px;
+	transform: rotate(43deg);
+}
+
+@-webkit-keyframes circle-anti-half {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@keyframes circle-anti-half {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes circle-spin-half {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes circle-spin-half {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.planet_list { padding:70px 190px; height:500px;}
+.track{ width: 1000px;height: 400px; position:absolute;left:11em; top: 50px; border: 1px solid darkgrey; border-radius: 50%; }
+.planet_item.planet01{ width:200px; height:200px; position:absolute; left:50%; top:50%; margin:-100px 0 0 -100px;}
+.planet_item.planet01 .ball{left: 28px;top: 27px;z-index:3; width:112px; height:112px;}
+.planet_item .ball .title{ width:100%; height:100%;  display: flex;align-items:center;justify-content: center; position:absolute; left:0; top:0;}
+.planet_item .ball a{display: table-cell;
+vertical-align: middle;
+text-align: center;
+color: #fff;
+font-size: 16px;
+text-shadow: 2px 2px 1px #000; }
+.planet_item .outer_barrier{ z-index:3;}
+.planet_item .ball_bg{ background:url(../images/planetBg.png) no-repeat scroll -10px -10px; background-size:97% 85%; width:100%; height:100%; position:absolute; left:0; top:0;z-index:2;}
+.planet_item.planet02 .ball_bg{ background-size:95% 85%;}
+@media (min-width:1500px) {
+	.planet_container{
+		top:130px;
+	}
+	.planet_item {
+		width: 13em;
+		float: left;
+		height: 13em;
+		text-align: center;
+		padding: 10px 0;
+		position: relative;
+	}
+
+	.planet_item .ball {
+		width: 9em; height:190px;
+		padding: 10px;
+		display: inline-block;
+		background: url(../images/circle_dashed.png) no-repeat scroll 0 0;
+		background-size: 100%;
+		position: absolute;
+		   left: -1px;
+          top: 13px;
+		-webkit-animation: circle-spin-half 10s linear infinite;
+		animation: circle-spin-half 10s linear infinite;
+	}
+	.planet_item .outer_barrier {
+		top: 44%;
+		left: 38%;
+		margin-top: -201px;
+		margin-left: -199px;
+		width: 376px;
+		height: 376px;
+	}
+	.planet_item .outer_barrier li a {
+		right: -3.5em;
+		bottom: -3.5em;
+		width: 7em;
+		height: 7em;
+	}
+	.planet_item .outer_barrier li a:after {
+		right: 0.2em;
+		bottom: 0.05em;
+		display: block;
+		width: 6.5em;
+		height: 6.5em;
+	}
+	
+	.border-l {
+		width: 2px;
+		height: 18px;
+		left: 95px;
+		top: 3px;
+	}
+	
+	.border-r {
+		width: 2px;
+		height: 18px;
+		left: 153px;
+		top: 3px;
+	}
+	
+	.planet_item .outer_barrier.three_barrier li a:after {
+		right: 0.4em;
+		bottom: 0.01em;
+	}
+	.planet_item .outer_barrier.three_barrier .border-r {
+		height: 20px;
+		left: 205px;
+		top: 33px;
+		transform: rotate(43deg);
+	}
+	.planet_item .outer_barrier.four_barrier li a:after {
+		right: 0.3em;
+		bottom: 0.01em;
+	}
+	.planet_item .outer_barrier.four_barrier .border-r {
+		height: 18px;
+		left: 182px;
+		top: 15px;
+		transform: rotate(30deg);
+	}
+	
+	.planet_item .outer_barrier.seven_barrier .border-r {
+		transform: rotate(22deg);
+		left: 163px;
+		top: 6px;
+	}
+	.planet_item .outer_barrier.eight_barrier li a:after {
+		right: 0.1em;
+		bottom: 0.04em;
+	}
+	.planet_item .outer_barrier.eight_barrier .border-r {
+		height: 18px;
+		left: 133px;
+		top: 1px;
+		transform: rotate(4deg);
+	}
+	.planet_item .outer_barrier.nine_barrier li a:after {
+		right: 0.19em;
+		bottom: 0.04em;
+	}
+	.planet_item .outer_barrier.nine_barrier .border-r {
+		height: 18px;
+		left: 133px;
+		top: -1px;
+		transform: rotate(8deg);
+	}
+	.planet_item .outer_barrier.ten_barrier li a:after {
+		right: -0.01em;
+		bottom: 0.09em;
+	}
+	.planet_item .outer_barrier.ten_barrier .border-r {
+		height: 18px;
+		left: 123px;
+		top: -1px;
+		transform: rotate(1deg);
+	}
+}

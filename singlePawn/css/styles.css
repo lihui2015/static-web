@@ -1,0 +1,126 @@
+
+/*=============2016-06-26=============*/
+/*=================星座===================*/
+.columnList{padding:0 70px;height:175px; position:absolute; left:0; bottom:0; width:100%;}
+.columnList .column_item{ width:33.33%;height:175px; min-height:26px; float:left; display:inline-block; background:url(../images/db_lanmbg.png) no-repeat scroll 0 0; background-size:100%;}
+.columnList .column_item h3{ font-size:18px; font-weight:500; line-height:28px; color:#fff; text-align:center; position:relative;}
+.columnList .column_item .right_icon{ position:absolute;right:50px; top:5px; background:url(../images/db_icon01.png) no-repeat scroll 0 0; width:20px; height:20px; background-size:100%;}
+.columnList .column_item .column_itemBox{ padding:10px 30px;} 
+
+.constellation_container{ position:absolute; left:0; top:90px; width:100%;}
+.constellation_list{ margin:0 150px;position: relative;}
+#consteCanvas{position: absolute;width:100%;height: 100%;top:0;left: 0;}
+.constellation_item{ width:25%; display:inline-block; float:left; height:180px; margin-bottom:20px;}
+.constellation_item.baiyangz{ background:url(../images/db_baiyz.png) no-repeat center 0;background-size:50%;}
+.constellation_item.shizz{ background:url(../images/db_shizz.png) no-repeat center 0;background-size:50%;}
+.constellation_item.sheshouz{ background:url(../images/db_shesz.png) no-repeat center 0;background-size:60%;}
+.constellation_item.tianxiez{ background:url(../images/db_tianxz.png) no-repeat center 0;background-size:40%;}
+.constellation_item.tianchengz{ background:url(../images/db_tiancz.png) no-repeat center 0;background-size:56%;}
+.constellation_item.chunvz{ background:url(../images/db_chunz.png) no-repeat center 0;background-size:45%;}
+.constellation_item.juxiez{ background:url(../images/db_juxz.png) no-repeat center;background-size:90%;}
+.page-planet{ background:url(../images/planet_bg.jpg) no-repeat scroll 0 0;background-size: 100% 100%;}
+/*.logoBox{ background:url(../images/title02Bg.png) no-repeat scroll 0 0; width:250px;padding:30px 30px; height:100px; background-size:100%; position:absolute; left:0; top:0; border-box:box-sizing;}
+.logoBox .logo img{ width:80px; height:auto;}*/
+
+/*=============关卡列表=============*/
+.stage_wrap{ padding:0 150px 0 160px;position:absolute; left:0; top:120px; width:100%;}
+.stage_top{background:url(../images/barrier_bg2.png) no-repeat scroll 0 0; background-size:100%;width:100%;height:150px; position:absolute; left:0; top:0;}
+.stage_bottom{background:url(../images/barrier_bg2.png) no-repeat scroll 0 bottom; background-size:100%; width:100%; height:150px; position:absolute; left:0; bottom:0;}
+.stage_container{background:url(../images/opacity_blue.png) repeat scroll 0 0;padding:5px 31px;}
+.stage_cont{ min-height:400px; width:100%; padding:20px 9px 15px; position:relative;}
+.stage_list{ margin:10px 0;}
+.stage_list .row{ height:35px; color:#fff; font-size:13px; overflow:hidden;}
+.stage_list .row:after{ content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.stage_list .row:first-child{ height:30px; line-height:30px; margin-bottom:10px;}
+.stage_list .item1{ width:10%; line-height:32px; display:inline-block; float:left; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.stage_list .row:first-child .item1{ line-height:30px;}
+.stage_list .item2{ width:6.4%; display:inline-block; float:left; text-align:center;}
+.stage_list .item3{ width:6%; line-height:30px; display:inline-block; float:left; text-align:center;}
+.stage_status{ background:url(../images/icon_barrier.png) no-repeat scroll 0 0; width:40px; height:30px; background-size:330%; display:inline-block;}
+.player01_stage .status_pass{ background-position:5px 2px;}
+.player02_stage .status_pass{ background-position:5px -34px;}
+.player03_stage .status_pass{ background-position:5px -67px;}
+.player04_stage .status_pass{ background-position:5px -104px;}
+.player05_stage .status_pass{ background-position:5px -136px;}
+.player06_stage .status_pass{ background-position:5px -173px;}
+.player07_stage .status_pass{ background-position:5px -208px;}
+.player08_stage .status_pass{ background-position:5px -242px;}
+.player09_stage .status_pass{ background-position:5px -274px;}
+.player10_stage .status_pass{ background-position:5px -308px;}
+.player01_stage .status_failure{background-position:-45px 2px;}
+.player02_stage .status_failure{background-position:-45px -34px;}
+.player03_stage .status_failure{background-position:-45px -67px;}
+.player04_stage .status_failure{background-position:-45px -104px;}
+.player05_stage .status_failure{background-position:-45px -136px;}
+.player06_stage .status_failure{background-position:-45px -173px;}
+.player07_stage .status_failure{background-position:-45px -208px;}
+.player08_stage .status_failure{background-position:-45px -242px;}
+.player09_stage .status_failure{background-position:-45px -274px;}
+.player10_stage .status_failure{background-position:-45px -308px;}
+.player01_stage .status_unreached{background-position:-95px 2px;}
+.player02_stage .status_unreached{background-position:-95px -34px;}
+.player03_stage .status_unreached{background-position:-95px -67px;}
+.player04_stage .status_unreached{background-position:-95px -104px;}
+.player05_stage .status_unreached{background-position:-95px -136px;}
+.player06_stage .status_unreached{background-position:-95px -173px;}
+.player07_stage .status_unreached{background-position:-95px -208px;}
+.player08_stage .status_unreached{background-position:-95px -242px;}
+.player09_stage .status_unreached{background-position:-95px -274px;}
+.player10_stage .status_unreached{background-position:-95px -308px;}
+
+.db_pager{ width:35px; height:100%; position:absolute; right:-10px;top:100px;}
+.db_pager a{ display:block; font-size:12px; color:#39c5ff; text-shadow:1px 1px 1px #3b5fff; text-decoration:none; padding:20px 0; text-align:center;}
+.db_pager a.prev,.db_pager a.next{ background:url(../images/db_pageBg.png) no-repeat scroll 0 0; width:100%; height:80px; background-size:100%; padding:15px 11px;}
+.db_cuurentPage{ background:url(../images/db_currentpage.png) no-repeat scroll 0 0; background-size:100%; width:150px; height:50px; color:#fff; position:absolute; right:20px; bottom:20px; padding:6px 0 0 125px;}
+.db_cuurentPage span{ background:#000; color:#fff; font-size:12px; display:inline-block; padding:1px;}
+@media (min-width:1500px){
+	.constellation_item{ height:290px;}
+	.constellation_container{ top:110px;}
+	.columnList{ padding:0 150px; height: 228px;}
+	.columnList .column_item{ height:228px;}
+	.columnList .column_item h3{line-height:35px;}
+	.columnList .column_item .right_icon{ right:65px; top:8px;}
+	
+	.stage_wrap{ top:150px;}
+	.db_pager{ top:150px;width: 42px;}
+	.db_pager a.prev, .db_pager a.next{ height:98px;}
+	.db_pager a{ padding:42px 0; font-size:14px;}
+	.stage_container{ padding:15px 31px 25px;}
+	.stage_list .row{ height:45px;}
+	.stage_list .item1{line-height:45px;}
+	.stage_list .item3{line-height:45px;}
+	.stage_list .row:first-child{ height:40px; line-height:40px;}
+	.stage_list .row:first-child .item3{ height:40px; line-height:40px;}
+.stage_status{ background:url(../images/icon_barrier.png) no-repeat scroll 0 0; width:50px; height:45px; background-size:330%; display:inline-block;}
+.player01_stage .status_pass{ background-position:5px 7px;}
+.player02_stage .status_pass{ background-position:5px -38px;}
+.player03_stage .status_pass{ background-position:5px -81px;}
+.player04_stage .status_pass{ background-position:5px -126px;}
+.player05_stage .status_pass{ background-position:5px -168px;}
+.player06_stage .status_pass{ background-position:5px -211px;}
+.player07_stage .status_pass{ background-position:5px -255px;}
+.player08_stage .status_pass{ background-position:5px -300px;}
+.player09_stage .status_pass{ background-position:5px -340px;}
+.player10_stage .status_pass{ background-position:5px -385px;}
+.player01_stage .status_failure{background-position:-56px 7px;}
+.player02_stage .status_failure{background-position:-56px -38px;}
+.player03_stage .status_failure{background-position:-56px -81px;}
+.player04_stage .status_failure{background-position:-56px -126px;}
+.player05_stage .status_failure{background-position:-56px -168px;}
+.player06_stage .status_failure{background-position:-56px -211px;}
+.player07_stage .status_failure{background-position:-56px -255px;}
+.player08_stage .status_failure{background-position:-56px -300px;}
+.player09_stage .status_failure{background-position:-56px -340px;}
+.player10_stage .status_failure{background-position:-56px -385px;}
+.player01_stage .status_unreached{background-position:-120px 7px;}
+.player02_stage .status_unreached{background-position:-120px -38px;}
+.player03_stage .status_unreached{background-position:-120px -80px;}
+.player04_stage .status_unreached{background-position:-120px -125px;}
+.player05_stage .status_unreached{background-position:-120px -166px;}
+.player06_stage .status_unreached{background-position:-120px -212px;}
+.player07_stage .status_unreached{background-position:-120px -254px;}
+.player08_stage .status_unreached{background-position:-120px -300px;}
+.player09_stage .status_unreached{background-position:-120px -340px;}
+.player10_stage .status_unreached{background-position:-120px -384px;}
+	
+}

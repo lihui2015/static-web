@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>星座</title>
+    <link rel="stylesheet" href="./css/individual.css">
+    <script>
+        var timeCount ='2016/7/20 14:10:00';  //倒计时结束时间
+        var totalScore = 2000;  //比赛总分数
+    </script>
+</head>
+<body>
+
+    <div class="titleBox">
+    	<div class="cont">
+            <div class="logoBox">
+              <img src="./images/gxb_logo.png" alt="" class="logo">
+            </div>
+            <span class="title">2016年第四届通信网络安全知识技能竞赛</span>
+        </div>
+    </div>
+    <div class="timeBox">
+        <p>剩余时间:</p>
+        <h6 id="showClock">01:32:21</h6>
+    </div>
+    <!--栏目-->
+	<div class="columnList clearfix">
+    	<div class="column_item closebox">
+        	<h3><span>内容栏目2</span><a href="javascript:;" class="right_icon"></a></h3>
+            <div class="column_itemBox"></div>
+        </div>
+        <div class="column_item closebox">
+        	<h3><span>内容栏目2</span><a href="javascript:;" class="right_icon"></a></h3>
+            <div class="column_itemBox"></div>
+        </div>
+        <div class="column_item closebox">
+        	<h3><span>内容栏目2</span><a href="javascript:;" class="right_icon"></a></h3>
+            <div class="column_itemBox"></div>
+        </div>
+    </div>
+	<!--星座-->
+    <div class="constellation_container">
+    	<div class="constellation_list clearfix">
+        	<div class="constellation_item_wrap">
+                <div class="constellation_item baiyangz IMG_0" id="db_baiyz"></div>
+                <div class="constellation_title">PCC编程</div>
+            </div>
+            <div class="constellation_item_wrap">
+            	<div class="constellation_item shizz IMG_1" id="db_shizz"></div>
+                 <div class="constellation_title">CRYPTP<br>密码学</div>
+            </div>
+            <div class="constellation_item_wrap">
+                <div class="constellation_item sheshouz IMG_2" id="db_shesz"></div>
+                <div class="constellation_title">Web</div>
+            </div>
+            <div class="constellation_item_wrap">
+                <div class="constellation_item tianxiez IMG_3" id="db_tianxz"></div>
+                <div class="constellation_title">STEGA<br>隐写</div>
+            </div>
+            <div class="constellation_item_wrap constellation_bottom1">
+                <div class="constellation_item tianchengz IMG_4" id="db_tiancz"></div>
+                <div class="constellation_title">Misc<br>综合</div>
+            </div>
+            <div class="constellation_item_wrap constellation_bottom2">
+                <div class="constellation_item chunvz IMG_5" id="db_chunz"></div>
+                <div class="constellation_title">REVERSE<br>逆向</div>
+            </div>
+            <div class="constellation_item_wrap constellation_bottom3">
+                <div class="constellation_item juxiez IMG_6" id="db_juxz"></div>
+                <div class="constellation_title">PWN 溢出</div>
+            </div>
+            <div id="consteCanvas"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery_1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/lufylegend-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/lufylegend.LoadingSample4-0.1.0.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/constellation.js"></script>
+
+  </body>
+</html>

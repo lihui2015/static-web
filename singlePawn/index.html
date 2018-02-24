@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shooting range</title>
+    <link rel="stylesheet" href="./css/individual.css">
+    <script>
+        var timeCount ='2016/8/20 14:10:00';  //倒计时结束时间
+    </script>
+</head>
+<body>
+    <div class="titleBox">
+    	<div class="cont">
+            <div class="logoBox">
+              <img src="./images/gxb_logo.png" alt="" class="logo">
+            </div>
+            <span class="title">2016年第四届通信网络安全知识技能竞赛</span>
+        </div>
+    </div>
+    <div class="timeBox">
+        <p>剩余时间:</p>
+        <h6 id="showClock">01:32:21</h6>
+    </div>
+    <!-- <div class="infoBox" id="infoCont">
+        <div class="cont fl"><span class="img"><img src="./images/img.jpg" alt=""></span><span class="playid">ID:Chian Play01</span><span class="playScore">得分：888</span><span class="playInfo">介绍：奔跑吧兄弟队的队长，是一名中国业界知名的高手，擅长XXX技术，在之前XXXXXXXX杯赛获得过冠军</span></div>
+        <span class="infoBtn fr J_infoBtn active" data-cont="infoCont"></span>
+    </div> -->
+    <div class="currentPageBox">
+         <span class="text">当前页面</span><span class="num">1</span>
+    </div>
+    <div class="mapBox clearfix">
+        <div class="map">
+            <h5>排行</h5>
+            <div class="seniorList">
+            	<ul>
+                	<li>
+                    <span class="medal_first"></span>
+                    <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                    <span class="name">昵称A</span>
+                    </li>
+                    <li>
+                    <span class="medal_second"></span>
+                    <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                    <span class="name">昵称B</span>
+                    </li>
+                    <li>
+                    <span class="medal_third"></span>
+                    <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                    <span class="name">昵称C</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <h5 class="title">勇夺第一战队：<span class="J_name">CHINA PLAY01</span></h5>
+            <div class="cont clearfix">
+                <div class="tabs">
+                    <ul>
+                        <li class="current tab"><img src="./images/flag/cn.png" alt="" class="flag_logo"></li>
+                        <li class="tab">得分：<span class="J_score">1000</span></li>
+                        <li class="tab">排名：第45</li>
+                    </ul>
+                </div>
+                <div class="panels">
+                    <div class="panel">
+                       <!-- <ul>
+                            <li>
+                                <span class="text">能力1:55</span>
+                                <span class="libg darkblue" style="width:55%"></span>
+                            </li>
+                            <li>
+                                <span class="text">能力2:90</span>
+                                <span class="libg purple" style="width:90%"></span>
+                            </li>
+                            <li>
+                                <span class="text">能力3:70</span>
+                                <span class="libg green" style="width:70%"></span>
+                            </li>
+                            <li>
+                                <span class="text">能力4:90</span>
+                                <span class="libg yellow" style="width:90%"></span>
+                            </li>
+                            <li>
+                                <span class="text">能力5:78</span>
+                                <span class="libg orange" style="width:78%"></span>
+                            </li>
+                            <li>
+                                <span class="text">能力6:90</span>
+                                <span class="libg cerise" style="width:90%"></span>
+                            </li>
+                            <li>
+                                <span class="text">能力7:53</span>
+                                <span class="libg blue" style="width:53%"></span>
+                            </li>
+                        </ul>-->
+                        <canvas id="radar" width="190" height="190"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="planesBox">
+        <img src="./images/planes.png" alt="">
+    </div> -->
+    <div class="starsBox">
+        <!-- <img src="./images/stars.png" alt=""> -->
+        <div class="starInfoBox" id="starInfo0">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                       <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo1">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo2">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo3">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                       <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo4">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo5">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo6">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <ul>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">ABCDEF</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称B</span>
+                        </li>
+                        <li>
+                            <img src="./images/flag/cn.png" alt="" class="flag_logo">
+                            <span class="name">昵称C</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="targetCanvas"></div>
+    <div class="circleBox J_circle"></div>
+    
+
+    <script type="text/javascript" src="./js/jquery_1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/lufylegend-1.10.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/lufylegend-1.9.4.simple.min.js"></script>-->
+    <script type="text/javascript" src="js/lib/lufylegend.LoadingSample4-0.1.0.min.js"></script>
+    <script type="text/javascript" src="js/lokijs.min.js"></script>
+    <script type="text/javascript" src="./js/chart.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/individual.js"></script>
+  </body>
+</html>
