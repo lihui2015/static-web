@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shooting range</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        var timeCount ='2016/8/15 10:00:00';  //倒计时结束时间
+        var totalScore = 2000;  //比赛总分数
+    </script>
+</head>
+<body>
+    <div class="sortBox">
+        <div class="sortTitle"><!--<span class="J_sortBtn sortBtn active" data-cont="sortCont"></span><--><span class="cont">排行榜</span></--></div>
+        <div class="sortCont" id="sortCont">
+            <div class="sortTh clearfix">
+                <span class="score scoreBg fr">得分</span>
+                <span class="sort scoreBg">排行</span>
+                <span class="userid scoreBg">选手ID</span>
+            </div>
+            <div class="sortList">
+                <ul class="J_sortList"></ul>
+            </div>
+            <div class="sortPage J_pageCode">
+                <span class="pageBg">上一页</span>
+                <span class="pageBg">下一页</span>
+            </div>
+        </div>
+    </div>
+    <div class="titleBox"><img src="./images/logo228.png" alt="" class="logo"><span class="cont">2016年第四届通信网络安全知识技能竞赛</span></div>
+    <div class="barrageBox">
+        <ul></ul>
+    </div>
+    <div class="timeBox">
+        <p>剩余时间:</p>
+        <h6 id="showClock">01:32:21</h6>
+    </div>
+    <div class="infoBox" id="infoCont">
+        <div class="cont fl"><span class="img"><img src="./images/img.jpg" alt=""></span><span class="playid">ID:Chian Play01</span><span class="playScore">得分：888</span><span class="playInfo">介绍：奔跑吧兄弟队的队长，是一名中国业界知名的高手，擅长XXX技术，在之前XXXXXXXX杯赛获得过冠军</span></div>
+        <span class="infoBtn fr J_infoBtn active" data-cont="infoCont"></span>
+    </div>
+    <div class="planesBox">
+        <!-- <img src="./images/planes.png" alt=""> -->
+    </div>
+    <div class="starsBox">
+        <!-- <img src="./images/stars.png" alt=""> -->
+        <div class="starInfoBox" id="starInfo0">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo1">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo2">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo3">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo4">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo5">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo6">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="starInfoBox" id="starInfo7">
+            <div class="starInfoTitle"><i>某论坛cookies漏洞场景</i><span class="infoBtn active J_starInfoBtn" data-cont="starInfoBox"></span></div>
+            <div class="starInfoCont">
+                <div class="tBox tStarBox">
+                    <h6>靶场达人</h6>
+                    <ul>
+                        <li>1st：ABCDEF</li>
+                        <li>2nd：sldjflasl</li>
+                        <li>3rd：dlsjdfjdk</li>
+                    </ul>
+                </div>
+                <div class="tBox tCountBox">
+                    <h6>靶场统计</h6>
+                    <ul>
+                        <li>攻击成功战队：32</li>
+                        <li>正在成功战队：42</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="targetCanvas"></div>
+    <div class="circleBox J_circle"></div>
+    <div class="circlesBgBox">
+        <div class="circle_0 circle"></div>
+        <div class="circle_1 circle"></div>
+        <div class="circle_2 circle"></div>
+    </div>
+    <!--<div id="mylegend">loading……</div>
+            <script>
+            LInit(50, "mylegend", 800, 480, main);
+            function main () {
+                alert("Hello lufylegend!");
+            }
+            </script>-->
+
+    <script type="text/javascript" src="./js/jquery_1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="js/lufylegend-1.10.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/lufylegend-1.9.4.simple.min.js"></script>-->
+    <script type="text/javascript" src="js/lib/lufylegend.LoadingSample4-0.1.0.min.js"></script>
+    <script type="text/javascript" src="js/lokijs.min.js"></script>
+    <script type="text/javascript" src="js/jquery.page.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/attack.js"></script>
+
+  </body>
+</html>
