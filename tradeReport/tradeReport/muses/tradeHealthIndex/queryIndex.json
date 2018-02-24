@@ -1,0 +1,55 @@
+﻿{
+	"customer": {                             
+	    "name": "深圳市金大地实业有限公司",      
+	    "memberId": "cn123456",                
+	    "phone": "0571-85021120",              
+	    "email": "85021120@163.com"             
+	},
+	"score": {
+	    "total": { "score": 180, "max": 300, "exceed": "80%" }, 
+	    "deal": { "score": 120, "max": 200 },  
+	    "growth": { "score": 60, "max": 100 }   
+	},
+	"deal": [                                 
+    {
+      "type": "ordinary",                 
+      "title": "商机获取",                 
+      "score": 16,                          
+      "max": 80,                          
+      "period": "月",                     
+      "entries": [                         
+        {
+          "title": "询盘及买家数",          
+          "score": 10,                     
+          "max": 50,                        
+          "description": "旺铺访客较低"    
+        }, {
+          "title": "P4P 效果层级",
+          "score": 4,
+          "max": 20,
+          "description": "在短时间内有效提升网站的流量"
+        }
+      ],
+      "icon": "opportunityAcquire",         
+      "description": "在商机环境阿里巴巴...", 
+      "url": "htts://..."                   
+    }, {
+      "type": "dataPrecipitation",          
+      "title": "数据沉淀",                  
+      "period": "年",                      
+      "entries": {
+        "tradeAssurance": 30000,
+        "transcationLevel": 6,            
+        "creditScore": "AAA级"              
+      },
+      "icon": "opportunityAcquire",         
+      "description": "在商机环境阿里巴巴...", 
+      "url": "htts://..."                  
+    }
+  ],
+  "growth": [                               
+    {
+    
+    }
+  ]
+}

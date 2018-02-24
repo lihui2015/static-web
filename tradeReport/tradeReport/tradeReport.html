@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>外贸健康度报告</title>
+<link rel="stylesheet" href="./static/tradeReport/src/style.css">
+<script>
+  window.config = {
+    globalId: '1111111'
+  };
+</script>
+</head>
+<body>
+
+<script id="customer-template" type="text/x-handlebars-template">
+  <h5 class="title">{{name}}</h5>
+  <pre class="text">客户GID：{{memberId}}</pre>
+  <pre class="text">电话：{{phone}}              邮箱：{{email}}            旺旺：test242324</pre>
+</script>
+<script id="dashBoard-template" type="text/x-handlebars-template">
+  <div class="cirleBox white">
+    <h5 class="title">{{type}}健康度</h5>
+    <h6 class="score">{{score}}</h6>
+  </div>
+  <p class="subTitle">{{type}}</p>
+  <p class="max">满分<span class='number'>{{max}}</span></p>
+</script>
+<script id="exceed-template" type="text/x-handlebars-template">
+    <div class="exceedBox">超越<span class="num">{{exceed}}</span>的同行</div>
+</script>
+
+
+<div class="tr__page">
+  <div class="tr__head">
+    <div class="tr__headCont clearfix">
+      <div class="tr__head-right">
+        <h5 class='title white'>外贸健康度报告</h5>
+        <p class='text white'>成交 / 成长健康度</p>
+        <a href="javascript:void(0);" class="btn J_copyToDing">复制到钉钉</a>
+      </div>
+      <div class="tr__head-left white J_tempHeadLeft"></div>
+    </div>
+  </div>
+  <div class="tr__body">
+    <div class="tr__section tr__dashBoard">
+      <div class="scoreBox J_deel"></div>
+      <div class="dashBoardBox">
+        <div id="dashBoard"></div>
+        <div class="decoration">
+          <div class="lineBox">
+            <span class="line"><i></i></span>
+            <span class="text">成交+成长</span>
+            <span class="line"><i></i></span>
+          </div>
+          <img src="./static/tradeReport/src/images/icon-sum.png" alt="">
+        </div>
+      </div>
+      <div class="scoreBox J_growth"></div>
+    </div>
+  </div>
+</div>
+
+<script src="./sea-modules/seajs/seajs/2.2.0/sea.js"></script>
+<script>
+
+  // Set configuration
+  seajs.config({
+    base: "./sea-modules/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js",
+      "handlebars": "gallery/handlebars/1.0.2/handlebars.js",
+      "g2": "g2/index.js"
+    }
+  });
+
+  seajs.use("./static/tradeReport/src/main");
+
+</script>
+
+</body>
+</html>

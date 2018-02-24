@@ -1,0 +1,60 @@
+html, body, div, span, h1, h2, h3, h4, p, img, strong, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Microsoft Yahei';
+}
+
+body {
+  background: #F4F4F4;
+}
+h1,h2,h3,h4,h5,h6{font-weight: 100;}
+*{margin:0;padding:0;list-style: none;border:none;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+.white{color:#ffffff;}
+.orange{color:#fe700a;}
+.gray{color:#555555;}
+
+.tr__page{background:#f5f5f5;}
+.tr__head{background:#2a333f;padding-bottom: 26px;}
+.tr__headCont{width:1190px;margin:0 auto;}
+.tr__head-right{float:right;text-align: right;padding-top:40px;}
+.tr__head-right .title{font-size: 27px;line-height: 1.1;font-weight: 100;letter-spacing: 2px;}
+.tr__head-right .text{margin-top:16px;font-size: 16px;}
+.tr__head-right .btn{line-height: 1;display: inline-block;text-decoration: none;border-radius:5px;}
+.tr__head-right .J_copyToDing{margin-top:16px;font-size: 14px;color:#ffffff;padding:8px 16px;background-color:#ffffff;color:#0183d7;}
+.tr__head-left{padding:32px 0 0 47px;background:url(./images/icon-home.png) no-repeat 0 32px;}
+.tr__head-left .title{font-size: 18px;font-weight: 100;}
+.tr__head-left .text{font-family: 'Microsoft Yahei';font-size: 16px;line-height: 1;margin-top:24px;}
+
+.tr__body{width:1190px;margin:0 auto;}
+.tr__section{margin-top:16px;box-shadow: 0 0 4px #cdcdcd;background:#ffffff;}
+.tr__dashBoard{margin-top:24px;text-align: center;padding-bottom: 16px;}
+.tr__dashBoard>div{display: inline-block;}
+.tr__dashBoard .scoreBox{padding-top:81px;}
+.tr__dashBoard .J_deel{}
+.tr__dashBoard .J_growth{margin-left: -20px}
+.tr__dashBoard .cirleBox{width:122px;height:122px;border-radius: 50%;background:#5aa0ff;}
+.tr__dashBoard .cirleBox .title{padding-top:36px;line-height: 1;font-size: 19px;letter-spacing: 1px;}
+.tr__dashBoard .cirleBox .score{padding-top:14px;font-size:30px;line-height: 1;font-family: 'arial';}
+.tr__dashBoard .subTitle{margin-top:15px;color:#ff944d;font-size:18px;line-height: 1;}
+.tr__dashBoard .max{font-size: 14px;color:#9b9798;line-height: 1;margin-top:10px;}
+
+.dashBoardBox{vertical-align: top;padding-top: 20px;margin-left: -10px;}
+#dashBoard{width:262px;height: 190px;margin:0 auto;position: relative;}
+.exceedBox{position: absolute;top:150px;font-size: 12px;color: #c3c3c3;text-align: center;width:100%;line-height: 17px;height:17px;}
+.exceedBox:before{content: '';display: inline-block;background:url(./images/icon-arrow.png) no-repeat 0 4px;width:18px;height:17px;padding-right: 1px;line-height: 17px;}
+.exceedBox .num{color: #ff831d;}
+.dashBoardBox .decoration{}
+.dashBoardBox .lineBox{padding-bottom: 6px;padding-top: 0px;}
+.dashBoardBox .line{font-size: 0;vertical-align: middle;}
+.dashBoardBox .line i{width:156px;border-bottom:1px #ff944d solid;display: inline-block;}
+.dashBoardBox .line:after,.dashBoardBox .line:first-child:before{width:6px;height:6px;border-radius: 50%;background-color:#ff944d;content: '';display: inline-block;vertical-align: middle;}
+.dashBoardBox .line:first-child{}
+.dashBoardBox .line:first-child:after{display: none;}
+.dashBoardBox .line:first-child:before{}
+.dashBoardBox .text{color:#ff944d;font-size:18px;line-height: 1;vertical-align: middle;padding:0 28px;}
